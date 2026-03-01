@@ -1,8 +1,8 @@
 # 📚 Smart Library Management System
 
-A full-stack **Spring Boot Library Management System** that allows users to browse books, make reservations, join waitlists, write reviews, and manage library resources through an admin workspace.
+A full-stack Library Management System built using Spring Boot that allows users to browse books, make reservations, join waitlists, write reviews, and manage resources through an administrative dashboard.
 
-Built as part of ELEC5619, this project demonstrates backend architecture, database design, authentication, and frontend integration.
+This system demonstrates secure authentication, role-based access control, database integration, and a clean layered architecture.
 
 ---
 
@@ -14,7 +14,7 @@ Built as part of ELEC5619, this project demonstrates backend architecture, datab
 - 📅 Book Reservation System
 - ⏳ Waitlist Management
 - ⭐ Reviews & Comments
-- 🔑 Password Reset
+- 🔑 Password Reset Functionality
 
 ### 🛠 Admin Features
 - ➕ Add / Edit / Delete Books
@@ -39,8 +39,7 @@ Built as part of ELEC5619, this project demonstrates backend architecture, datab
 - JavaScript
 
 ### Database
-- MySQL (or H2 if configured)
-- Schema + Seed Data Included
+- MySQL (or H2, depending on configuration)
 
 ---
 
@@ -108,7 +107,7 @@ Or run `LibraryManagementApplication.java` directly from your IDE.
 
 ### 4️⃣ Access the Application
 
-Open in browser:
+Open your browser and navigate to:
 
 ```
 http://localhost:8080
@@ -116,59 +115,46 @@ http://localhost:8080
 
 ---
 
-## 🔐 User Roles
+## 🔐 Role-Based Access
 
-| Role  | Access |
-|-------|--------|
-| USER  | Browse, reserve, review |
-| ADMIN | Manage books, users, statistics |
+| Role  | Permissions |
+|-------|------------|
+| USER  | Browse, reserve, review books |
+| ADMIN | Manage books, users, reservations, statistics |
 
 ---
 
 ## 🏛 Architecture
 
-The system follows a layered architecture:
+This project follows a layered architecture:
 
-- Controller Layer → Handles HTTP requests  
-- Service Layer → Business logic  
-- Repository Layer → Database operations  
-- Model Layer → Entity definitions  
+- **Controller Layer** → Handles HTTP requests  
+- **Service Layer** → Business logic  
+- **Repository Layer** → Database operations  
+- **Model Layer** → Entity definitions  
 
-This structure ensures maintainability, scalability, and clean separation of concerns.
-
----
-
-## 🎯 Learning Outcomes
-
-This project demonstrates:
-
-- RESTful backend development  
-- Authentication & authorization  
-- Database schema design  
-- MVC architecture  
-- Role-based access control  
-- Full-stack integration  
+This ensures separation of concerns, scalability, and maintainability.
 
 ---
 
-## 🧠 Future Improvements
+## 🧠 Potential Enhancements
 
 - Responsive UI redesign  
 - Docker containerization  
-- Unit & Integration Testing  
-- Advanced analytics dashboard  
-- Email notifications for reservations  
+- Automated testing (Unit & Integration)  
+- Email notifications  
+- REST API documentation (Swagger/OpenAPI)  
 
 ---
 
 ## 👨‍💻 Author
 
 Pulkit Shrimali  
-Bachelor of Software Engineering (Honours)  
-Major: Intelligent Information Engineering  
+Software Engineering Student  
+Interested in Backend Systems, Security & Intelligent Systems  
 
 ---
 
 ## 📄 License
 
-Developed for academic purposes.
+This project is available for learning and demonstration purposes.
